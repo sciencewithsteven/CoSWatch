@@ -3,7 +3,7 @@ const uuid = require('uuid');
 const fs = require("fs");
 const fastcsv = require("fast-csv");
 const csvtojson = require("csvtojson");
-const policeFile = '/Users/stevenjones/Documents/HR_127/MVP/db/policeData.csv';
+const policeFile = '/Users/stevenjones/Documents/My_Git_Projects/CoSWatch/CoSWatch/db/policeData.csv';
 
 
 var policeCSV = csvtojson().fromFile(policeFile)

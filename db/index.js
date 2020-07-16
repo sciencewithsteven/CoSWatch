@@ -33,7 +33,7 @@ const reviewSchema = new Schema({
 const PoliceData = mongoose.model('policeData', policeSchema);
 const PoliceReview = mongoose.model('policeReview', reviewSchema);
 
-mongoose.connect(URI.URI, OPTIONS)
+mongoose.connect(URI.MongoLocal, OPTIONS)
   .then(() => console.log(`Connected to mongoDB on PORT: 27017`))
   .catch(error => console.error(error));
 
