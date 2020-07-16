@@ -11,7 +11,6 @@ const OPTIONS = {
   useCreateIndex: true
 };
 
-
 const policeSchema = new Schema({
   _id: String,
   fullName: String,

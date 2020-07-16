@@ -4,10 +4,11 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "seed": "node db/csvConvert.js",
     "build": "webpack --mode production",
     "watch": "webpack -d --watch",
     "nodemon-server": "nodemon server/index.js",
-    "node-server": "node server.index.js"
+    "node-server": "node server/index.js"
   },
   "repository": {
     "type": "git",

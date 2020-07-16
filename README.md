@@ -1,8 +1,8 @@
 # CoSWatch - Community Safety Watch: When there is something strange in your neighborhood... Who are you going to call?
 
-## Goal:
+## Goals:
 
-Create two carousels for a property managment microservice for a real estate web app that presented the user with newly listed properties within their area of interest and properties which are similar to the properties that the user is currently viewing.
+Built a full-stack minimal viable prouduct over one weekend. The web app was built using an object oriented language over a React and Express framework.
 
 ## Technologies:
 
@@ -28,13 +28,14 @@ Create two carousels for a property managment microservice for a real estate web
 
 **Public Cloud Service**
 * AWS
+* Mongo Atlas
 
 **Collaborative Methodologies**
 * Continuous Integration
 * Unit, Functional Testing
 * Code Branching, Architecture Branching
 
-## Component Images:
+## Images:
 
 **Bottom**
 
@@ -47,20 +48,25 @@ Create two carousels for a property managment microservice for a real estate web
 
 ## Reproduction Steps:
 
-Assumes MongoDB is installed and running in the local environment.
+Assumes MongoDB or Mongo Atlas is configured for in local environment.
 
 1. Install repo dependencies:
   * $ npm install
 
-2. Routes:
-  * http://localhost:3535/home
-  * http://localhost:3535/home/similar
-  * http://localhost:3535/home/newest
+2. Seed the test data:
+  * $ npm run seed
 
-3. Seed the test data:
-  * run a GET request to http://localhost:3535/home
+3. Build client bundle:
+  * $ npm run build
 
-4. Start the local server:
-  * $ npm run node-server
+3. Start the local server:
+  * $ npm run node
+
+4. Routes:
+  * http://localhost:4000
+  * http://localhost:4000/police
+  * http://localhost:4000/search
+  * http://localhost:4000/addPolice
+  * http://localhost:4000/addReview
 
 
